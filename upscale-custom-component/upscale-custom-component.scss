@@ -1,0 +1,22 @@
+:host {
+	display: none;
+
+	&.component-ready {
+		display: block;
+	}
+
+	&.component-failed {
+		display: none;
+
+		&.component-fallback {
+			display: block;
+		}
+	}
+}
+
+iframe {
+	display: block;
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
+}
