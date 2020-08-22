@@ -29,7 +29,7 @@
 		}
 	}
 }
-
+/*
 .upscale-mobile :host {
 	.configuration {
 		padding: 12px 0;
@@ -47,6 +47,7 @@
 		padding: 48px 0;	
 	}
 }
+*/
 
 .configuration {
 	box-sizing: border-box;
@@ -73,7 +74,7 @@
 	margin: auto 0;
 	padding: 0 20px;
 	text-align: center;
-	a {
+	.cta {
 		color:black;
 		font-weight:800;
 		font-size:30px;
@@ -81,17 +82,8 @@
 		text-align:center; 
 		display:block; 
 		width:100%;
+
 	}
 }
 
-.cta {
-	color:black;
-	font-weight:800;
-	font-size:30px;
-	padding:30px; 
-	text-align:center; 
-	display:block; 
-	width:100%;
-	
-}
 
