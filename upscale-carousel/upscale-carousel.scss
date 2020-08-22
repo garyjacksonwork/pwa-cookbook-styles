@@ -53,6 +53,9 @@
 .carousel-container {
 	position: relative;
 	max-height:500px;
+	max-width: 1220px;
+	width: 100%;
+	margin: 30px auto;
 	.carousel {
 		overflow: hidden;
 	}
@@ -77,9 +80,6 @@
 
 	.carousel-content {
 		position: relative;
-		max-width: 1500px;
-		width: 100%;
-		margin: 30px auto;
 	}
 
 	.component-headline, .component-sub-headline {
