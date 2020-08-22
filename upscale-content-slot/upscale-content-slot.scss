@@ -34,16 +34,25 @@
 	.configuration {
 		padding: 12px 0;
 	}
+		.text {
+		padding: 12px 0;
+	}
 }
 
 .upscale-tablet :host {
 	.configuration {
 		padding: 24px 0;
 	}
+		.text {
+		padding: 24px 0;
+	}
 }
 
 .upscale-desktop :host  {
 	.configuration {
+		padding: 48px 0;
+	}
+	.text {
 		padding: 48px 0;
 	}
 }
@@ -72,9 +81,21 @@
 	margin: auto 0;
 }
 
-
+.row-item {
+	.content-slot-component-background {
+		.container {
+			.container {
+				.text {
+					padding: 0 20px;
+					.full-width-text {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
 	.full-width-text {
-		margin: 30px 0;
 		text-align: center;
 		&.bg-yellow {
 			background-color: #E1FA3D;
