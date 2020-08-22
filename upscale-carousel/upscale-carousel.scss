@@ -149,6 +149,7 @@
 .upscale-medium, .upscale-large, .upscale-extra-large {
 	:host {
 		.content-container {
+			max-height:360px;
 			.content-headline {
 				color: white;
 				@include extra-large-font-size;
@@ -164,6 +165,11 @@
 				background-color: #000;
 				margin-top: 24px;
 				border-radius: 4px;
+			}
+		}
+		.image-container {
+			.img {
+				max-height:360px;
 			}
 		}
 	}
