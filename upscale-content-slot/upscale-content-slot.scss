@@ -33,58 +33,18 @@
 .upscale-mobile :host {
 	.configuration {
 		padding: 12px 0;
-		.text {
-			padding: 0 20px;
-			text-align: center;
-			a {
-				color:black;
-				font-weight:800;
-				font-size:30px;
-				padding:30px; 
-				text-align:center; 
-				display:block; 
-				width:100%;
-			}
-		}
 	}
 }
 
 .upscale-tablet :host {
 	.configuration {
-		padding: 24px 0;
-		.text {
-			padding: 0 20px;
-			text-align: center;
-			a {
-				color:black;
-				font-weight:800;
-				font-size:30px;
-				padding:30px; 
-				text-align:center; 
-				display:block; 
-				width:100%;
-			}
-		}		
+		padding: 24px 0;		
 	}
-
 }
 
 .upscale-desktop :host  {
 	.configuration {
-		padding: 48px 0;
-		.text {
-			padding: 0 20px;
-			text-align: center;
-			a {
-				color:black;
-				font-weight:800;
-				font-size:30px;
-				padding:30px; 
-				text-align:center; 
-				display:block; 
-				width:100%;
-			}
-		}	
+		padding: 48px 0;	
 	}
 }
 
@@ -108,7 +68,30 @@
 }
 
 
+
 .text {
 	margin: auto 0;
+	padding: 0 20px;
+	text-align: center;
+	a {
+		color:black;
+		font-weight:800;
+		font-size:30px;
+		padding:30px; 
+		text-align:center; 
+		display:block; 
+		width:100%;
+	}
+}
+
+.cta {
+	color:black;
+	font-weight:800;
+	font-size:30px;
+	padding:30px; 
+	text-align:center; 
+	display:block; 
+	width:100%;
+	
 }
 
