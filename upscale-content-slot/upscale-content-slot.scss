@@ -70,11 +70,14 @@
 
 .text {
 	margin: auto 0;
+}
+
+
 	.full-width-text {
 		margin: 30px 0;
 		text-align: center;
 		&.bg-yellow {
-			background-color: yellow;
+			background-color: #E1FA3D;
 		}
 		a {
 			color:black;
@@ -86,4 +89,3 @@
 			width:100%;
 		}
 	}
-}
