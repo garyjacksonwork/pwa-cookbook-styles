@@ -1,6 +1,7 @@
 @import "~styles/helpers/_module";
 
 :host ngx-slick::ng-deep {
+	max-height:360px;
 
 	.slick-arrow {
 		$icon-size: 34px;
@@ -58,6 +59,7 @@
 	margin: 30px auto;
 	.carousel {
 		overflow: hidden;
+		max-height:360px;
 	}
 	.slide {
 		width: 100%;
@@ -80,6 +82,7 @@
 
 	.carousel-content {
 		position: relative;
+		max-height:360px;
 	}
 
 	.component-headline, .component-sub-headline {
@@ -108,6 +111,7 @@
 		left: 0;
 		box-sizing: border-box;
 		pointer-events: none;
+		max-height:360px;
 
 		.content-headline {
 			color: white;
