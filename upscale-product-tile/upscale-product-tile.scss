@@ -142,9 +142,8 @@
 	@extend .column; // Only holds true when in grid view.
 	background-color: white;
     padding: 0;
-    &:hover {
-        cursor: pointer;
-    }
+    cursor: pointer;
+    
 	.colors {
 		margin: 12px 0;
 
