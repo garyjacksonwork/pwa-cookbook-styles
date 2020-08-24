@@ -32,24 +32,6 @@
 
 
 
-
-
-	.router-outlet {
-		.content-slot-component-background {
-			.container {
-				.content {
-					.text {
-						a {
-							display:block;
-							background-color: red;
-							width:100%;
-							padding:30px 0;
-						}
-					}
-				}
-			}
-		}
-	}
 }
 /*
 .upscale-mobile :host {
@@ -91,4 +73,7 @@
 	line-height: 1.38;
 }
 
+.text {
+	text-align: center;
+}
 
