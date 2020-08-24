@@ -67,6 +67,10 @@
 
 		.upscale-generic-image {
 			padding-top: 56.25%;
+
+			.img {
+				max-height: 360px;
+			}
 			@media (min-width: 1300px) {
 				padding-top: 730px;
 			}
@@ -174,4 +178,10 @@
 			}
 		}
 	}
+}
+
+
+
+.img[_ngcontent-serverapp-c134] {
+	max-height: 360px !important;
 }
