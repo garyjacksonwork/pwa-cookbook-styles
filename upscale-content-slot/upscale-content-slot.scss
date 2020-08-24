@@ -32,19 +32,19 @@
 
 .upscale-mobile :host {
 	.configuration {
-		padding: 12px;
+		padding: 12px 0;
 	}
 }
 
 .upscale-tablet :host {
 	.configuration {
-		padding: 24px;
+		padding: 24px 0;
 	}
 }
 
 .upscale-desktop :host  {
 	.configuration {
-		padding: 48px;
+		padding: 48px 0;
 	}
 }
 
@@ -70,4 +70,11 @@
 
 .text {
 	margin: auto 0;
+}
+
+
+.text .cta {
+	display:block;
+	padding: 40px 20px;
+	width:100%;
 }
