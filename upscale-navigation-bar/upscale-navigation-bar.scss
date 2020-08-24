@@ -35,7 +35,10 @@ $space-between: 10px;
 					text-overflow: ellipsis;
 					white-space: nowrap;
 					display: flex;
-
+					&:hover {
+						background-color: #fff;
+						color: #1e2d7d;
+					}
 					.item-icon {
 						padding: 0 6px;
 						width: auto;
@@ -43,7 +46,11 @@ $space-between: 10px;
 						align-self: center;
 					}
 				}
-
+				&:first-of-type {
+					a {
+						font-size: 0;
+					}
+				}
 			}
 		}
 	}
