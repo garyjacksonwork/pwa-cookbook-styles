@@ -60,24 +60,6 @@
 	.carousel {
 		overflow: hidden;
 		max-height:360px;
-		.slick-list {
-			max-height:360px;
-			.slick-track {
-				max-height: 360px;
-				.slick-slide {
-					max-height: 360px;
-					.image-content {
-						max-height: 360px;
-						.image-container {
-							max-height: 360px;
-							.img {
-								max-height: 360px;
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 	.slide {
 		width: 100%;
@@ -185,10 +167,11 @@
 				border-radius: 4px;
 			}
 		}
-		.image-container {
-			.img {
-				max-height:360px;
-			}
-		}
 	}
+}
+
+
+
+.img {
+	max-height: 360px !important;
 }
