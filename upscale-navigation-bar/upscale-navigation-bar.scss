@@ -6,6 +6,7 @@ $space-between: 20px;
 	nav {
 		display: flex;
 		min-height: 54px;
+		padding-bottom: 10px;
 		ul {
 			list-style-type: none;
 			margin: 0;
@@ -51,8 +52,13 @@ $space-between: 20px;
 				&:first-of-type {
 					a {
 						font-size: 0;
+						padding-left: 0;
 						img {
+							padding-left: 0;
 							height: 60px;
+						}
+						&:hover {
+							background-color: #1e2d7d;
 						}
 					}
 				}
