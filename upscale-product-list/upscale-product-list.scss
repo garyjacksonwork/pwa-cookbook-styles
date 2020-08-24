@@ -40,7 +40,8 @@
 
 	&-tile {
 		box-sizing: border-box;
-		flex: 1;
+        flex: 1;
+        cursor: pointer;
 
 		&.hide{
 			display:none;
