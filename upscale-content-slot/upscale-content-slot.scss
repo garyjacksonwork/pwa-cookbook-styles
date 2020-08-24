@@ -28,6 +28,27 @@
 			margin-bottom: 1.33em;
 		}
 	}
+
+
+
+
+
+
+	.router-outlet {
+		.content-slot-component-background {
+			.container {
+				.content {
+					.text {
+						a {
+							display:block;
+							background-color: red;
+							width:100%;
+							padding:30px 0;
+						}
+					}
+				}
+			}
+	}
 }
 /*
 .upscale-mobile :host {
@@ -88,7 +109,7 @@
 }
 
 
-.cta[_ngcontent-serverapp-c208] {
+.cta {
 	display:block;
 	padding: 40px 20px;
 	width:100%;
