@@ -1,6 +1,7 @@
 @import "~styles/helpers/_module";
 
 :host ngx-slick::ng-deep {
+	max-height:360px;
 
 	.slick-arrow {
 		$icon-size: 34px;
@@ -52,9 +53,13 @@
 
 .carousel-container {
 	position: relative;
-	max-height:500px;
+	max-height:360px;
+	max-width: 1220px;
+	width: 100%;
+	margin: 30px auto;
 	.carousel {
 		overflow: hidden;
+		max-height:360px;
 	}
 	.slide {
 		width: 100%;
@@ -77,6 +82,7 @@
 
 	.carousel-content {
 		position: relative;
+		max-height:360px;
 	}
 
 	.component-headline, .component-sub-headline {
@@ -105,6 +111,7 @@
 		left: 0;
 		box-sizing: border-box;
 		pointer-events: none;
+		max-height:360px;
 
 		.content-headline {
 			color: white;
@@ -142,6 +149,7 @@
 .upscale-medium, .upscale-large, .upscale-extra-large {
 	:host {
 		.content-container {
+			max-height:360px;
 			.content-headline {
 				color: white;
 				@include extra-large-font-size;
@@ -157,6 +165,11 @@
 				background-color: #000;
 				margin-top: 24px;
 				border-radius: 4px;
+			}
+		}
+		.image-container {
+			.img {
+				max-height:360px;
 			}
 		}
 	}

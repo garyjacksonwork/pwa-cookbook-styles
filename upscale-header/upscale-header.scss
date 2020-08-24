@@ -1,6 +1,6 @@
 @import '~styles/helpers/_module';
 
-$row-height: 54px;
+$row-height: 100px;
 
 :host {
 	position: sticky;
@@ -8,7 +8,7 @@ $row-height: 54px;
 	width: 100%;
 	display: block;
 	box-shadow: 0px 7px 12px 0px #00000029;
-	background: blue;
+	background: #1e2d7d;
 	min-height: $row-height;
 	z-index: 4;
 
@@ -55,10 +55,11 @@ $row-height: 54px;
 				align-items: center;
 			}
 			&.desktop {
-				max-height: 40px;
+				max-height: 76px;
 			}
-			max-height: 26px;
+			max-height: 76px;
 			@include clickable;
+			padding: 12px 0;
 		}
 	}
 }
