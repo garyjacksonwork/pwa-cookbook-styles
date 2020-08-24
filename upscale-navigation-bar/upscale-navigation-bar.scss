@@ -35,6 +35,7 @@ $space-between: 10px;
 					text-overflow: ellipsis;
 					white-space: nowrap;
 					display: flex;
+					text-transform: uppercase;
 					&:hover {
 						background-color: #fff;
 						color: #1e2d7d;
