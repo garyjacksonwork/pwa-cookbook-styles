@@ -45,10 +45,10 @@
 			&-content{
 				display: flex;
 				flex-direction: column;
-				padding: 12px 6px 0 12px;
+				padding: 20px;
 				height: 100%;
                 box-sizing: border-box;
-                background-color: transparent !important;
+                background-color: rgba(82,77,73,.4);
 
 				&-alignment {
 					&_left {
@@ -88,7 +88,17 @@
 
 			&.below{
 				position: relative;
-				order: 1;
+                order: 1;
+                .overlay-content {
+                    background-color: transparent;
+                    .content-headline,
+                    .product-name,
+                    .category-name,
+                    .article-headline,
+                    .link-text {
+                        color:$black;
+                    }
+                }
 			}
 
 			.content-headline,
