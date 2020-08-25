@@ -1,0 +1,204 @@
+@import 'variables';
+
+@mixin button(
+	$background-color: black,
+	$font-weight: 300,
+	$color: white,
+	$hover-mix-color: white,
+	$hover-mix-percent: 15%,
+	$border-radius: 4px
+) {
+	@include clickable();
+	@include hover($background-color, $hover-mix-color);
+	background-color: $background-color;
+	border: 0;
+	border-radius: $border-radius;
+	color: $color;
+	font-weight: $font-weight;
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+	padding: 0;
+	&:disabled {
+		cursor: default;
+	}
+}
+
+@mixin clickable {
+	cursor: pointer;
+	user-select: none;
+}
+
+@mixin divider($background:  $upscale-grey7) {
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: $background;
+}
+
+@mixin hover($backgroundColor, $hoverMixColor: #000000) {
+	&:hover {
+		@if $backgroundColor == #ffffff {
+			background-color: darken($backgroundColor, 10%);
+		} @else {
+			/*
+			 * Had a discussion with Jeremy Laverdiere that the hover colors are actually tricky
+			 * and it might be necessary to do specific hover colors. For now make your best judgment call as to whether the hover
+			 * color looks acceptable and add the specific case if needed.
+			 */
+			background-color: mix($hoverMixColor, $backgroundColor, 10%);
+		}
+	}
+}
+
+@mixin truncate-text-with-ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/**
+ * NOTE: $lineHeight should always be in relative em format, i.e. 1.5 or 1.33. Not px.
+ */
+@mixin multiline-truncate-text-with-ellipsis($fontSize: 14px, $lineHeight: 18px / 14px, $lineCount: 2) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	max-height: $lineHeight * $fontSize * $lineCount;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: $lineCount;
+	-webkit-box-orient: vertical;
+}
+
+@mixin multiline-truncate-swatch-with-ellipsis($fontSize: 14px, $lineHeight: 18px / 14px, $lineCount: 2) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	max-height: $lineHeight * $fontSize * $lineCount;
+	overflow: hidden;
+}
+
+@mixin flex-columns($columns, $gutter) {
+	width: calc(#{100%/$columns} - #{$gutter*($columns - 1)/$columns});
+	margin-right: $gutter;
+
+	&:nth-child(#{$columns}n) {
+		margin-right: 0;
+	}
+}
+
+// calculate responsive font size
+@mixin minmax-font-size($minFontSize, $maxFontSize){
+	font-size: calc(#{$minFontSize}px + (#{$maxFontSize} - #{$minFontSize}) * ((100vw - 600px) / (1600 - 600)));
+}
+
+// calculate responsive line height
+@mixin minmax-line-height($minLineHeight, $maxLineHeight){
+	line-height: calc(#{$minLineHeight}em + (#{$maxLineHeight} - #{$minLineHeight}) * ((100vw - 600px)/(1600 - 600)));
+}
+
+@mixin extra-large-font-size{
+	font-size: 46px;
+	line-height: 56px;
+	font-weight: 700;
+
+	@media screen and (max-width: 900px) {
+		font-size: 36px;
+		line-height: 44px;
+	}
+}
+
+@mixin large-font-size{
+	font-size: 36px;
+	line-height: 44px;
+	font-weight: 700;
+
+	@media screen and (max-width: 900px) {
+		font-size: 26px;
+		line-height: 36px;
+	}
+}
+
+@mixin medium-font-size{
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+
+	@media screen and (max-width: 600px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@mixin base-font-size{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+@mixin small-font-size{
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 300;
+}
+
+@mixin article-body-font-size{
+	font-size: 22px;
+	line-height: 42px;
+	font-weight: 300;
+
+	@media screen and (max-width: 900px) {
+		font-size: 18px;
+		line-height: 32px;
+	}
+}
+
+@mixin article-subheadline-font-size{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+
+
+
+
+@mixin transform($args...) {
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-ms-transform: $args;
+	-o-transform: $args;
+	transform: $args;
+  }
+  
+  @mixin transform-origin($args...) {
+	-webkit-transform-origin: $args;
+	-moz-transform-origin: $args;
+	-ms-transform-origin: $args;
+	-o-transform-origin: $args;
+	transform-origin: $args;
+  }
+  
+  @mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+  }
+  
+  @mixin transition-delay($args...) {
+	-webkit-transition-delay: $args;
+	-moz-transition-delay: $args;
+	-ms-transition-delay: $args;
+	-o-transition-delay: $args;
+	transition-delay: $args;
+  }
+
+  @mixin noselect() {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }

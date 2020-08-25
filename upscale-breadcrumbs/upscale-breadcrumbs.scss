@@ -1,7 +1,9 @@
 @import "~styles/helpers/_module";
 
 :host {
-	width: 100%;
+    width: 100%;
+    max-width: 1180px;
+    border-left: 4px solid #00badb;
 	height: 40px;
 	padding: 0 25px;
 	display: flex;
