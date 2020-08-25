@@ -102,8 +102,8 @@ $large-spacing: 48px;
 			background-color: $white;
 			&:hover {
 				//opacity: .8;
-				background-color: $black;
-				color:$white;
+				background-color: $black !important;
+				color:$white !important;
 			}
 		}
 	}

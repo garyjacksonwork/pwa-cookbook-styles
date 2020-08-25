@@ -123,7 +123,7 @@
 				align-items: center;
 				margin-top: 12px;
 				margin-bottom: 10px;
-
+				
 				&.overlay-content-flex-alignment{
 					&_left{
 						align-self: flex-start;
@@ -239,15 +239,14 @@
                     .content-subheadline,
                     .article-subheadline {
                         color:$black !important;
-                    }
-                }
-                &:hover {
-                    .overlay-content {
-                        .link-text {
-                            background-color: $black;
-                            color:$white;
-                        }
-                    }
+					}
+					.link-text {
+						&:hover {
+							background-color: $black !important;
+							color:$white !important;
+							@include transition(0.3s);
+						}
+					}
                 }
             }
 		}
