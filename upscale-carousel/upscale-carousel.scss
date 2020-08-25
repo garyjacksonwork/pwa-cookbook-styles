@@ -171,6 +171,12 @@
 				border-radius: 4px;
 			}
 		}
+		.image-container {
+			max-height:360px;
+			.img {
+				max-height:360px;
+			}
+		}
 	}
 }
 
