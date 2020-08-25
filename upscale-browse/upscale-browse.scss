@@ -68,7 +68,8 @@
 	width: 100%;
 	height: 50px;
     border-left: 4px solid #00badb;
-    max-width: 1180px;
+	max-width: 1140px;
+	padding: 0 20px;
 	.breadcrumb {
 		&:not(:last-of-type) {
 			@include clickable;
