@@ -97,13 +97,13 @@
 			.article-headline{
 				@include multiline-truncate-text-with-ellipsis(26px, 1.38, 2);
                 font-weight: 500;
-                color: $black;
+                color: $black !important;
 			}
 
 			.content-subheadline,
 			.article-subheadline{
                 @include multiline-truncate-text-with-ellipsis(16px, 1.5, 2);
-                color: $black;
+                color: $black !important;
 			}
 
 			.link-text{
@@ -131,7 +131,11 @@
 					&_right{
 						align-self: flex-end;
 					}
-				}
+                }
+                &:hover {
+                    background-color: $black;
+                    color:$white;
+                }
 			}
 
 			&.product{
