@@ -224,7 +224,7 @@
             }
             &.below {
                 .overlay-content {
-                    background-color: transparent;
+                    background-color: transparent !important;
                     .content-headline,
                     .product-name,
                     .category-name,
@@ -232,7 +232,7 @@
                     .link-text,
                     .content-subheadline,
                     .article-subheadline {
-                        color:$black;
+                        color:$black !important;
                     }
                 }
                 &:hover {
