@@ -5,6 +5,14 @@
 	$dark-font-color: #000000;
 	$light-font-color: #FFFFFF;
 
+	&:hover {
+		.storybook-content {
+			.img {
+				@include transform(scale(1.1));
+			}
+		}
+	}
+
 	.imageDetail{
 		height: 100%;
 	}
@@ -15,7 +23,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-
+		overflow: hidden;
 		.image-aspect-ratio {
 			&_16-9 {
 				padding-top: calc(9/16 * 100%);
