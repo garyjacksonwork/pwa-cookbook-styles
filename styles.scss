@@ -156,7 +156,8 @@ button {
 }
 
 
-a {
+a,
+button {
 	&:hover {
 		@include transition(0.3s);
 	}

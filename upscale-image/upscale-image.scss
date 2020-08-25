@@ -99,9 +99,11 @@ $large-spacing: 48px;
 		.link-button {
 			@include medium-font-size;
 			height: $button-height;
-
+			background-color: $white;
 			&:hover {
-				opacity: .8;
+				//opacity: .8;
+				background-color: $black;
+				color:$white;
 			}
 		}
 	}
