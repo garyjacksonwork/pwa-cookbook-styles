@@ -61,15 +61,17 @@ $large-spacing: 48px;
 
 .image-content {
 	margin: auto;
+	cursor: pointer;
 }
 
 .image-container {
 	position: relative;
 
 	.overlay-content {
-		position: absolute;
+		position: relative;
 		box-sizing: border-box;
 		max-height: 100%;
+		background-color: transparent !important;
 
 		&.default {
 			width: 100%;
