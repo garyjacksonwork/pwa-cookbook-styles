@@ -224,13 +224,23 @@
             }
             &.below {
                 .overlay-content {
-                    background-color: transparent !important;
+                    background-color: transparent;
                     .content-headline,
                     .product-name,
                     .category-name,
                     .article-headline,
-                    .link-text {
-                        color:$black !important;
+                    .link-text,
+                    .content-subheadline,
+                    .article-subheadline {
+                        color:$black;
+                    }
+                }
+                &:hover {
+                    .overlay-content {
+                        .link-text {
+                            background-color: $black;
+                            color:$white;
+                        }
                     }
                 }
             }
