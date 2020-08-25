@@ -89,16 +89,6 @@
 			&.below{
 				position: relative;
                 order: 1;
-                .overlay-content {
-                    background-color: transparent;
-                    .content-headline,
-                    .product-name,
-                    .category-name,
-                    .article-headline,
-                    .link-text {
-                        color:$black;
-                    }
-                }
 			}
 
 			.content-headline,
@@ -231,7 +221,19 @@
 				.selling-price{
 					@include small-font-size;
 				}
-			}
+            }
+            &.below {
+                .overlay-content {
+                    background-color: transparent !important;
+                    .content-headline,
+                    .product-name,
+                    .category-name,
+                    .article-headline,
+                    .link-text {
+                        color:$black !important;
+                    }
+                }
+            }
 		}
 		.overlay-content:empty {
 			padding: 0;
