@@ -100,8 +100,9 @@ $large-spacing: 48px;
 			@include medium-font-size;
 			height: $button-height;
 			background-color: $white;
+			cursor: pointer !important;
 			&:hover {
-				//opacity: .8;
+				opacity: 1 !important;
 				background-color: $black !important;
 				color:$white !important;
 			}

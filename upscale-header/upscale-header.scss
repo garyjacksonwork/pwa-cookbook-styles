@@ -1,5 +1,6 @@
 @import '~styles/helpers/_module';
 
+/*
 $row-height: 100px;
 
 :host {
@@ -20,6 +21,74 @@ $row-height: 100px;
 			box-sizing: border-box;
 			flex-grow: 0;
 			flex-shrink: 1;
+			&-navbar {
+				display: flex;
+				align-items: center;
+			}
+		}
+		&__bottom {
+			&-navbar {
+				display: block;
+			}
+		}
+		&__top-left {
+			display: flex;
+			height: $row-height;
+			align-items: center;
+		}
+		&__hamburger {
+			@include button($background-color: black);
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 42px;
+			padding: 0 12px;
+			margin-right: 6px;
+		}
+		&__shopping-cart-icon {
+			@include clickable;
+		}
+		&__logo-image {
+			&-wrapper {
+				height: 100%;
+				//display: flex;
+				display:none;
+				align-items: center;
+			}
+			&.desktop {
+				max-height: 76px;
+			}
+			max-height: 76px;
+			@include clickable;
+			padding: 12px 0;
+		}
+	}
+}*/
+
+
+:host {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	display: block;
+	box-shadow: 0px 7px 12px 0px #00000029;
+	background: #1e2d7d;
+	min-height: $row-height;
+	z-index: 4;
+
+	.header {
+		width: 100% !important;
+		&__top {
+			display: flex;
+			width: 100%;
+			max-width: 1180px;
+			padding: 0 20px;
+			justify-content: space-between;
+			box-sizing: border-box;
+			flex-grow: 0;
+			flex-shrink: 1;
+			background: $white;
 			&-navbar {
 				display: flex;
 				align-items: center;

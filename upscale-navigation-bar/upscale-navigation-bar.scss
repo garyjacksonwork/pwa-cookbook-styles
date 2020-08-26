@@ -3,10 +3,16 @@
 $space-between: 20px;
 
 :host {
+	//max-width: 1180px;
+	width: 100%;
+	background: #1e2d7d;
 	nav {
 		display: flex;
 		min-height: 54px;
-		padding-bottom: 10px;
+		padding: 0 20px 10px 20px;
+		width: 100%;
+		max-width: 1180px;
+		margin: 0 auto;
 		ul {
 			list-style-type: none;
 			margin: 0;
