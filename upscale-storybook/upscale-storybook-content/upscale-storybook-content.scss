@@ -254,6 +254,18 @@
 			padding: 0;
 		}
 
+		.overlay-content {
+			.storybook-default-template-content-background-overlay {
+				background-color: transparent;
+				.content-headline,
+				.content-subheadline {
+					max-width: 1180px;
+					width: 100%;
+					margin: 0 auto;
+				}
+			}
+		}
+
 		::ng-deep{
 			upscale-image{
 				flex: 1;
