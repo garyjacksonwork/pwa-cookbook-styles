@@ -248,15 +248,9 @@
 						}
 					}
                 }
-            }
-		}
-		.overlay-content:empty {
-			padding: 0;
-		}
-
-		.overlay-content {
+			}
 			.storybook-default-template-content-background-overlay {
-				background-color: transparent;
+				background-color: transparent !important;
 				.content-headline,
 				.content-subheadline {
 					max-width: 1180px;
@@ -264,7 +258,12 @@
 					margin: 0 auto;
 				}
 			}
+			
 		}
+		.overlay-content:empty {
+			padding: 0;
+		}
+
 
 		::ng-deep{
 			upscale-image{
