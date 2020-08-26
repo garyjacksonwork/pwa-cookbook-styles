@@ -6,6 +6,18 @@ $space-between: 20px;
 	//max-width: 1180px;
 	width: 100%;
 	background: #1e2d7d;
+	&.header__top-navbar {
+		background: $white;
+		nav {
+			ul {
+				li {
+					a {
+						color:#1e2d7d;
+					}
+				}
+			}
+		}
+	}
 	nav {
 		display: flex;
 		min-height: 54px;
@@ -30,7 +42,7 @@ $space-between: 20px;
 				height: 60px;
 				a {
 					//@include button($background-color: black, $border-radius: 2px);
-					background-color: #1e2d7d;
+					//background-color: #1e2d7d;
 					font-size: 16px;
 					font-weight: 700;
 					height: 60px;
@@ -44,6 +56,7 @@ $space-between: 20px;
 					white-space: nowrap;
 					display: flex;
 					text-transform: uppercase;
+					background-color: transparent;
 					&:hover {
 						background-color: #fff;
 						color: #1e2d7d;
