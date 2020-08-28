@@ -68,7 +68,6 @@ $row-height: 100px;
 
 
 :host {
-	position: sticky;
 	top: 0;
 	width: 100%;
 	display: block;
@@ -120,6 +119,9 @@ $row-height: 100px;
 	.header {
 		width: 100%;
 		max-width: none !important;
+		position: -webkit-sticky;
+		position: sticky;
+		top:0;
 		
 		padding: 0;
 		&__top {
