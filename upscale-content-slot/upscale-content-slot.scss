@@ -42,13 +42,13 @@
 
 .upscale-tablet :host {
 	.configuration {
-		padding: 24px 0;
+		padding: 20px 0;
 	}
 }
 
 .upscale-desktop :host  {
 	.configuration {
-		padding: 48px 0;
+		padding: 20px 0;
 	}
 }
 
@@ -62,7 +62,6 @@
 .container {
 	display: block;
 	margin: auto;
-	width:100%;
 }
 
 .headline {
