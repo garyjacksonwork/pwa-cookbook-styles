@@ -78,3 +78,19 @@
 	text-align: center;
 }
 
+.footer-main {
+	.column {
+		float:left;
+		display:block;
+		width: calc(100% / 4 - 33px);
+		margin-right: 40px;
+		&:nth-of-type(4) {
+			margin-right: 0;
+		}
+		p,
+		a {
+			width: 100%;
+			display:block;
+		}
+	}
+}
