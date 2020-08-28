@@ -5,6 +5,9 @@
 	height: 100%;
 	width: 100%;
 	position: relative;
+	&.storybook-image-content-cell-background {
+		cursor: default;
+	}
 	.img {
 		&.loading {
 			display: none;
