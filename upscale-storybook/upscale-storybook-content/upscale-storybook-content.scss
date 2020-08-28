@@ -255,12 +255,16 @@
 			.storybook-template-id-content-background-overlay,
 			.storybook-image-content-background-overlay {
 				//background-color: transparent !important;
+				cursor: pointer;
 				.content-headline,
 				.content-subheadline {
 					max-width: 1180px;
 					width: 100%;
 					margin: 0 auto;
 				}
+			}
+			.storybook-image-content-background-overlay {
+				cursor: default;
 			}
 			
 		}
