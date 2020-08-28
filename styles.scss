@@ -16,7 +16,8 @@ html {
 html, body {
 	font-family: $base-font-family;
 	color: $upscale-grey2;
-	background-color: $upscale-grey9;
+	//background-color: $upscale-grey9;
+	background-color: $white;
 	@include base-font-size;
 }
 
