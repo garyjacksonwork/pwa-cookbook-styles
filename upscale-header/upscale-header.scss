@@ -113,69 +113,70 @@ $row-height: 100px;
 			}
 		}
 	}
-
-	.header {
-		width: 100%;
-		max-width: none !important;
+	.header-container {
 		position: -webkit-sticky;
 		position: sticky;
-		top:0;
-		
-		padding: 0;
-		&__top {
-			display: flex;
+		top: 0;
+		.header {
 			width: 100%;
-			justify-content: space-between;
-			box-sizing: border-box;
-			flex-grow: 0;
-			flex-shrink: 1;
-			height:40px;
-			background: $white !important;
-			&-navbar {
+			max-width: none !important;
+			
+			padding: 0;
+			&__top {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				box-sizing: border-box;
+				flex-grow: 0;
+				flex-shrink: 1;
+				height:40px;
+				background: $white !important;
+				&-navbar {
+					display: flex;
+					align-items: center;
+					max-width: 1180px;
+					width: 100%;
+					padding: 0 20px;
+					margin: 0 auto;
+				}
+			}
+			&__bottom {
+				&-navbar {
+					display: block;
+				}
+			}
+			&__top-left {
+				display: flex;
+				height: $row-height;
+				align-items: center;
+			}
+			&__hamburger {
+				@include button($background-color: black);
+				box-sizing: border-box;
 				display: flex;
 				align-items: center;
-				max-width: 1180px;
-				width: 100%;
-				padding: 0 20px;
-				margin: 0 auto;
+				justify-content: center;
+				height: 42px;
+				padding: 0 12px;
+				margin-right: 6px;
 			}
-		}
-		&__bottom {
-			&-navbar {
-				display: block;
+			&__shopping-cart-icon {
+				@include clickable;
 			}
-		}
-		&__top-left {
-			display: flex;
-			height: $row-height;
-			align-items: center;
-		}
-		&__hamburger {
-			@include button($background-color: black);
-			box-sizing: border-box;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 42px;
-			padding: 0 12px;
-			margin-right: 6px;
-		}
-		&__shopping-cart-icon {
-			@include clickable;
-		}
-		&__logo-image {
-			&-wrapper {
-				height: 100%;
-				//display: flex;
-				display:none;
-				align-items: center;
-			}
-			&.desktop {
+			&__logo-image {
+				&-wrapper {
+					height: 100%;
+					//display: flex;
+					display:none;
+					align-items: center;
+				}
+				&.desktop {
+					max-height: 76px;
+				}
 				max-height: 76px;
+				@include clickable;
+				padding: 12px 0;
 			}
-			max-height: 76px;
-			@include clickable;
-			padding: 12px 0;
 		}
-	}
+	}	
 }
