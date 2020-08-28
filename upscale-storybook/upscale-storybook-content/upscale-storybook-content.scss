@@ -4,6 +4,12 @@
 	position: relative;
 	$dark-font-color: #000000;
 	$light-font-color: #FFFFFF;
+	overflow: hidden;
+	&:hover {
+		.img {
+			@include transform(scale(1.1));
+		}
+	}
 
 
 	.imageDetail{
@@ -15,12 +21,6 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		overflow: hidden;
-		&:hover {
-			.img {
-				@include transform(scale(1.1));
-			}
-		}
 		.image-aspect-ratio {
 			&_16-9 {
 				padding-top: calc(9/16 * 100%);
@@ -254,7 +254,7 @@
 			.storybook-product-content-background-overlay,
 			.storybook-template-id-content-background-overlay,
 			.storybook-image-content-background-overlay {
-				background-color: transparent !important;
+				//background-color: transparent !important;
 				.content-headline,
 				.content-subheadline {
 					max-width: 1180px;
