@@ -68,7 +68,6 @@ $row-height: 100px;
 
 
 :host {
-	top: 0;
 	width: 100%;
 	display: block;
 	box-shadow: 0px 7px 12px 0px #00000029;
@@ -108,7 +107,6 @@ $row-height: 100px;
 					font-size:15px;
 					font-weight: 400;
 					line-height: 1;
-					//float:left;
 					margin:0;
 					vertical-align: middle;
 				}
