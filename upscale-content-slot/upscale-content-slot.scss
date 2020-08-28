@@ -39,8 +39,17 @@
 				}
 				p,
 				a {
+					line-height: 30px;
 					width: 100%;
 					display:block;
+					margin: 0;
+					text-align:left;
+				}
+				a {
+					color: $black;
+					&:hover {
+						color:$lightgrey;
+					}
 				}
 			}
 		}
