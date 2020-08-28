@@ -2,6 +2,7 @@
 
 :host {
 	display: block;
+	border-top: 1px solid #eee;
 
 	::ng-deep upscale-aspect-ratio {
 		h1, h2, h3, h4 {
@@ -28,29 +29,35 @@
 			margin-bottom: 1.33em;
 		}
 	}
+
+
+
+
 }
 
 .upscale-mobile :host {
 	.configuration {
-		padding: 12px;
+		padding: 12px 0;
 	}
 }
 
 .upscale-tablet :host {
 	.configuration {
-		padding: 24px;
+		padding: 20px 0;
 	}
 }
 
 .upscale-desktop :host  {
 	.configuration {
-		padding: 48px;
+		padding: 20px 0;
 	}
 }
+
 
 .configuration {
 	box-sizing: border-box;
 	margin: 0 auto;
+	//background-color: #E1FA3D !important;
 }
 
 .container {
@@ -67,25 +74,7 @@
 	line-height: 1.38;
 }
 
-
 .text {
-	margin: auto 0;
+	text-align: center;
 }
 
-
-.footer-main {
-	.column {
-		float:left;
-		width: calc(100% / 4 - 33px);
-		margin-right: 40px;
-		p,
-		a {
-			line-height: 30px;
-			display: block;
-			width:100%;
-		}
-		&:nth-of-type(4) {
-			margin-right: 0;
-		}
-	}
-}
