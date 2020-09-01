@@ -74,7 +74,7 @@
 	}
 
 	.name{
-		@include medium-font-size;
+		//@include medium-font-size;
 		margin-top: 0;
 	}
 
@@ -128,7 +128,7 @@
 	}
 
 	.name{
-		@include medium-font-size;
+		//@include medium-font-size;
 		margin-top: 0;
 	}
 
@@ -189,7 +189,7 @@
 			line-height: 20px;
 			color: #d01345 !important;
 			white-space: nowrap;
-			padding-left: 10px;
+			padding-left: 8px;
 			margin-top: -2px;
 		}
 	}
@@ -209,12 +209,13 @@
 	.name {
 		//@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
 		color: black;
-		line-height: 1.4;
-		font-size: 15px;
-		letter-spacing: 0px;
+		line-height: 1.2;
+		font-size: 14px;
+		height:34px;
 		overflow: hidden;
 		font-weight: 300;
-		margin: 16px 0;
+		margin: 16px 0 6px 0;
+		letter-spacing: -0.8px;
 	}
 
 	.price {
@@ -250,11 +251,11 @@
 		text-align: center;
 
 		button {
-			background-color: #1e2d7d;
-			border: 1px solid #1e2d7d;
+			background-color: #1e2d7d !important;
+			border: 1px solid #1e2d7d !important;
 			&:hover {
-				background-color: #fff;
-				color: #1e2d7d;
+				background-color: #fff !important;
+				color: #1e2d7d !important;
 			}
 		}
 
