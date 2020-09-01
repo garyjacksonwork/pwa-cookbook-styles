@@ -22,7 +22,7 @@
 	}
 
 	.name{
-		@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
+		//@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
 	}
 
 	.colors {
@@ -187,7 +187,7 @@
 			font-size: 14px;
 			letter-spacing: .8px;
 			line-height: 20px;
-			color: #d01345;
+			color: #d01345 !important;
 			white-space: nowrap;
 			padding-left: 10px;
 		}
@@ -208,9 +208,10 @@
 	.name {
 		//@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
 		color: black;
-		line-height: 1.2;
+		line-height: 1.4;
+		font-size: 15px;
 		overflow: hidden;
-		font-weight: 500;
+		font-weight: 300;
 		margin: 20px 0;
 	}
 
@@ -246,6 +247,15 @@
 		padding: 14px 0;
 		text-align: center;
 
+		button {
+			background-color: #1e2d7d;
+			border: 1px solid #1e2d7d;
+			&:hover {
+				background-color: #fff;
+				color: #1e2d7d;
+			}
+		}
+
 		upscale-one-tap-buy-button {
 			margin-left: 12px;
 			max-width: calc(100% / 3 * 2);
@@ -280,12 +290,12 @@
 	:host {
 		&.list-layout {
 			.name {
-				@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
+				//@include multiline-truncate-text-with-ellipsis(16px, 1.2, 3);
 			}
 		}
 
 		.name {
-			@include multiline-truncate-text-with-ellipsis(18px, 1.5, 3);
+			//@include multiline-truncate-text-with-ellipsis(18px, 1.2, 3);
 		}
 
 		.price {
@@ -301,7 +311,7 @@
 		min-height: $size;
 
 		.name{
-			@include multiline-truncate-text-with-ellipsis(25px, 1.5, 3);
+			//@include multiline-truncate-text-with-ellipsis(25px, 1.5, 3);
 		}
 
 		.price {
@@ -324,7 +334,7 @@
 		}
 
 		.name{
-			@include multiline-truncate-text-with-ellipsis(28px, 1.5, 3);
+			//@include multiline-truncate-text-with-ellipsis(28px, 1.5, 3);
 		}
 
 		.price {
