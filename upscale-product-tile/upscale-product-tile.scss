@@ -206,15 +206,17 @@
 	}
 
 	.name {
-		@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
+		//@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
 		color: black;
+		line-height: 1.2;
+		overflow: hidden;
 		font-weight: 500;
-		margin-top: 6px;
+		margin: 20px 0;
 	}
 
 	.price {
-		color: black;
-		@include base-font-size;
+		//color: black;
+		//@include base-font-size;
 	}
 
 	.actions {
