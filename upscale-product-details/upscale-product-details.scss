@@ -193,7 +193,8 @@ $fixed-button-bar-height: 100px;
 	margin: 10px 60px;
 
 	.title{
-		@include large-font-size;
+		//@include large-font-size;
+		font-size: 30px;
 		font-weight: bold;
 		padding: 25px 12px 0;
 	}
@@ -420,6 +421,7 @@ $fixed-button-bar-height: 100px;
 		text-decoration: line-through;
 		display:inline-block;
 		padding-right: 10px;
+		font-weight: 300;
 	}
 	.selling-price {
 		display:inline-block;
