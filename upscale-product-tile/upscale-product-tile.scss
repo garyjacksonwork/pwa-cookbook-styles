@@ -209,9 +209,9 @@
 	.name {
 		//@include multiline-truncate-text-with-ellipsis(16px, 1.5, 3);
 		color: black;
-		line-height: 1.2;
-		font-size: 14px;
-		height:34px;
+		line-height: 1.2 !important;
+		font-size: 14px !important;
+		min-height:34px !important;
 		overflow: hidden;
 		font-weight: 300;
 		margin: 16px 0 6px 0;
@@ -302,7 +302,7 @@
 		}
 
 		.price {
-			@include base-font-size;
+			//@include base-font-size;
 		}
 	}
 }
