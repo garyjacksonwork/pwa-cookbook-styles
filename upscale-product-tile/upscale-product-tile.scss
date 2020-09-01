@@ -221,6 +221,7 @@
 	.price {
 		//color: black;
 		//@include base-font-size;
+		margin-bottom: 6px;
 	}
 
 	.actions {
@@ -253,9 +254,11 @@
 		button {
 			background-color: #1e2d7d !important;
 			border: 1px solid #1e2d7d !important;
+			opacity: 1 !important;
 			&:hover {
 				background-color: #fff !important;
 				color: #1e2d7d !important;
+				opacity: 1 !important;
 			}
 		}
 

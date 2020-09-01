@@ -418,6 +418,12 @@ $fixed-button-bar-height: 100px;
 	padding-bottom: 18px;
 	.original-price {
 		text-decoration: line-through;
+		display:inline-block;
+		padding-right: 10px;
+	}
+	.selling-price {
+		display:inline-block;
+		color: #d01345 !important;
 	}
 }
 
@@ -427,8 +433,8 @@ $fixed-button-bar-height: 100px;
 }
 
 .title {
-	font-weight: bold;
-	padding-bottom: 4px;
+	font-weight: 500;
+	padding-bottom: 20px;
 }
 
 .noOptions {
