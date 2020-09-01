@@ -190,6 +190,7 @@
 			color: #d01345 !important;
 			white-space: nowrap;
 			padding-left: 10px;
+			margin-top: -2px;
 		}
 	}
 
@@ -210,9 +211,10 @@
 		color: black;
 		line-height: 1.4;
 		font-size: 15px;
+		letter-spacing: 0px;
 		overflow: hidden;
 		font-weight: 300;
-		margin: 20px 0;
+		margin: 16px 0;
 	}
 
 	.price {
