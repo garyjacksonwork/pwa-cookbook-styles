@@ -3,6 +3,7 @@
 :host {
 	display: block;
 	border-top: 1px solid #eee;
+	margin-top: 30px;
 
 	::ng-deep upscale-aspect-ratio {
 		h1, h2, h3, h4 {
@@ -55,6 +56,7 @@
 					font-size: 14px;
 					text-decoration: none;
 					&:hover {
+						text-decoration: underline;
 						color:#00badb;
 					}
 				}
