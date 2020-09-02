@@ -132,7 +132,7 @@ $space-between: 10px;
 		width: 100%;
 		max-width: 1180px;
 		margin: 0 auto;
-		height:60px;
+		height:50px;
 		ul {
 			list-style-type: none;
 			margin: 0;
@@ -140,7 +140,7 @@ $space-between: 10px;
 			flex-wrap: wrap;
 			align-items: center;
 			overflow: hidden;
-			height:60px;
+			height:50px;
 			li {
 				box-sizing: border-box;
 				display: flex;
@@ -151,7 +151,7 @@ $space-between: 10px;
 				a {
 					//@include button($background-color: black, $border-radius: 2px);
 					//background-color: #1e2d7d;
-					font-size: 15px;
+					font-size: 14px;
 					font-weight: 300;
 					padding: 1px $space-between;
 					text-decoration: unset;
