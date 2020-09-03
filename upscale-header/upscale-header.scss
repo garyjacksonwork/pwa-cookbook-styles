@@ -129,7 +129,7 @@ $row-height: 100px;
 			box-sizing: border-box;
 			flex-grow: 0;
 			flex-shrink: 1;
-			height:40px;
+			height:50px;
 			background: $white !important;
 			&-navbar {
 				display: flex;
@@ -173,9 +173,9 @@ $row-height: 100px;
 			&.desktop {
 				max-height: 76px;
 			}
-			max-height: 76px;
+			max-height: 40px;
 			@include clickable;
-			padding: 12px 0;
+			padding: 5px 0;
 		}
 	}
 }
