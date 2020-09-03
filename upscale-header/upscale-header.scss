@@ -166,8 +166,8 @@ $row-height: 100px;
 		&__logo-image {
 			&-wrapper {
 				height: 100%;
-				//display: flex;
-				display:none;
+				display: flex;
+				//display:none;
 				align-items: center;
 			}
 			&.desktop {
