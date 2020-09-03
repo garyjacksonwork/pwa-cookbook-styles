@@ -102,7 +102,7 @@ upscale-shopping-cart-icon {
 
 
 
-$space-between: 5px;
+$space-between: 10px;
 
 :host {
 	width: 100%;
@@ -163,7 +163,7 @@ $space-between: 5px;
 					white-space: nowrap;
 					display: flex;
 					text-transform: uppercase;
-					letter-spacing: -0.8px;
+					letter-spacing: -0.2px;
 					background-color: transparent;
 					&:hover {
 						background-color: #fff;
