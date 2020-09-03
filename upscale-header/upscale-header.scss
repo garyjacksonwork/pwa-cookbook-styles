@@ -170,9 +170,10 @@ $row-height: 100px;
 				height: 100%;
 				display: flex;
 				//display:none;
+				width:200px;
 				align-items: center;
 				h1 {
-					padding-left: 30px;
+					padding-left: 20px;
 				}
 			}
 			&.desktop {
