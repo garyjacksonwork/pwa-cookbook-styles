@@ -131,10 +131,11 @@ $row-height: 100px;
 			flex-shrink: 1;
 			height:50px;
 			background: $white !important;
+			padding: 0 20px;
 			&-navbar {
 				display: flex;
 				align-items: center;
-				max-width: 1180px;
+				//max-width: 1180px;
 				width: 100%;
 				padding: 0 20px;
 				margin: 0 auto;
@@ -165,10 +166,14 @@ $row-height: 100px;
 		}
 		&__logo-image {
 			&-wrapper {
+				max-height: 50px;
 				height: 100%;
 				display: flex;
 				//display:none;
 				align-items: center;
+				h1 {
+					padding-left: 30px;
+				}
 			}
 			&.desktop {
 				max-height: 40px;
