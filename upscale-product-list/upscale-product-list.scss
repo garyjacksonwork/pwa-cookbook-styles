@@ -79,8 +79,9 @@
 .upscale-large-width, .upscale-extra-large-width {
 	:host {
 		.product {
-			padding: 6px;
-			width: 25%;
+			//padding: 6px;
+			width: calc(25% - 10px);
+			margin: 10px;
 
 			&.fullWidth{
 				width: 100%;
