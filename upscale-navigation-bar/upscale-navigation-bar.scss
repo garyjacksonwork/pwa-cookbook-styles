@@ -1,6 +1,6 @@
 @import '~styles/helpers/_module';
-/*
-$space-between: 20px;
+
+$space-between: 14px;
 
 :host {
 	width: 100%;
@@ -9,109 +9,7 @@ $space-between: 20px;
 		background: $white;
 		nav {
 			height: 40px;
-			ul {
-				height:30px;
-				padding: 5px 0;
-				width: 100%;
-				justify-content: flex-end;
-				li {
-					height:100%;
-					a {
-						color:#1e2d7d;
-					}
-				}
-			}
-		}
-	}
-	nav {
-		display: flex;
-		min-height: auto;
-		//padding: 0 20px;
-		width: 100%;
-		max-width: 1180px;
-		margin: 0 auto;
-		height:80px;
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 10px 0;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			overflow: hidden;
-			height:60px;
-			li {
-				box-sizing: border-box;
-				display: flex;
-				align-items: center;
-				border: 0;
-				outline: 0;
-				height: 100%;
-				a {
-					//@include button($background-color: black, $border-radius: 2px);
-					//background-color: #1e2d7d;
-					font-size: 15px;
-					font-weight: 500;
-					padding: 1px $space-between;
-					text-decoration: unset;
-					text-align: left;
-					color: white;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space: nowrap;
-					display: flex;
-					text-transform: uppercase;
-					background-color: transparent;
-					&:hover {
-						background-color: #fff;
-						color: #1e2d7d;
-					}
-					.item-icon {
-						padding: 0 6px;
-						width: auto;
-						height: 20px;
-						align-self: center;
-					}
-				}
-				&:first-of-type {
-					a {
-						height:60px;
-						font-size: 0;
-						padding-left: 0;
-						img {
-							padding-left: 0;
-							height: 60px;
-						}
-						&:hover {
-							background-color: #1e2d7d;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-upscale-shopping-cart-icon {
-	margin: 0 6px 0 3px;
-	font-weight: 100;
-	@include small-font-size;
-}
-*/
-
-
-
-
-$space-between: 10px;
-
-:host {
-	width: 100%;
-	background: #1e2d7d;
-	&.header__top-navbar {
-		background: $white;
-		nav {
-			height: 40px;
-			max-width: 1220px;
+			//max-width: 1220px;
 			ul {
 				height:30px;
 				padding: 5px 0;
@@ -130,7 +28,7 @@ $space-between: 10px;
 	nav {
 		display: flex;
 		min-height: auto;
-		padding: 0 20px;
+		//padding: 0 20px;
 		width: 100%;
 		//max-width: 1180px;
 		max-width: none;
@@ -144,6 +42,7 @@ $space-between: 10px;
 			align-items: center;
 			overflow: hidden;
 			height:30px;
+			padding: 0 20px;
 			li {
 				box-sizing: border-box;
 				display: flex;
