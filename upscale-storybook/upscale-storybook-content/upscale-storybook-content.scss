@@ -142,11 +142,8 @@
 				}
 
 				.price{
-					//display: flex;
-					//flex-direction: row;
-					display:block;
-					float: left;
-					width: calc(100% - 50px);
+					display: flex;
+					flex-direction: row;
 
 
 
@@ -187,12 +184,9 @@
 				}
 
 				.buy-buttons {
-					//display: inline-flex;
-					//padding-top: 14px;
-					//text-align: center;
-					float: left;
-					display: block;
-					width:40px;
+					display: inline-flex;
+					padding-top: 14px;
+					text-align: center;
 
 					upscale-one-tap-buy-button {
 						margin-left: 12px;
