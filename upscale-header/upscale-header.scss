@@ -129,7 +129,6 @@ $row-height: 100px;
 			flex-shrink: 1;
 			height:50px;
 			background: #fff !important;
-			padding: 0 20px;
 			&-navbar {
 				display: flex;
 				align-items: center;
@@ -162,10 +161,10 @@ $row-height: 100px;
 		}
 		&__logo-image {
 			&-wrapper {
-				max-height: 50px;
+				max-height: 60px;
 				height: 100%;
 				display: flex;
-				//display:none;
+				float: left;
 				width:200px;
 				align-items: center;
 				h1 {
@@ -173,9 +172,9 @@ $row-height: 100px;
 				}
 			}
 			&.desktop {
-				max-height: 40px;
+				max-height: 50px;
 			}
-			max-height: 40px;
+			max-height: 50px;
 			@include clickable;
 			padding: 5px 0;
 		}
@@ -184,4 +183,7 @@ $row-height: 100px;
 
 .header-container {
 	width: 100%;
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
