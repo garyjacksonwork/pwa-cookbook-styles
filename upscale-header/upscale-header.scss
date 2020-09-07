@@ -82,9 +82,9 @@ $row-height: 100px;
 			width:100%;
 			.column {
 				display:inline-block;
-				width: calc(100% / 5 - 20px); 
+				width: calc(100% / 5 - 16px); 
 				margin-right:20px;
-				vertical-align: initial;
+				vertical-align: middle;
 				&:nth-of-type(5) {
 					margin-right: 0;
 				}
@@ -107,9 +107,12 @@ $row-height: 100px;
 					//max-width: 130px;
 					font-size:12px;
 					font-weight: 400;
-					line-height: 1;
+					line-height: 33px;
 					margin:0;
 					vertical-align: middle;
+					&:nth-of-type(2) {
+						line-height: 1;
+					}
 				}
 				a {
 					font-size: 14px;
@@ -118,6 +121,9 @@ $row-height: 100px;
 					&:hover {
 						color: #00badb;
 					}
+				}
+				p, a {
+					max-width: 130px;
 				}
 			}
 		}
