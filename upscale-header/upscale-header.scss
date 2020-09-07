@@ -98,12 +98,12 @@ $row-height: 100px;
 					height:26px;
 					width:26px;
 					margin-right: 10px;
-					float:left;
-					display:block;
+					//float:left;
+					display:inline-block;
 				}
 				p {
 					display:inline-block;
-					width: calc(100% - 36px);
+					width: auto;
 					//max-width: 130px;
 					font-size:12px;
 					font-weight: 400;
@@ -112,7 +112,8 @@ $row-height: 100px;
 					vertical-align: middle;
 				}
 				a {
-					text-transform: uppercase;
+					font-size: 14px;
+					font-weight: 400;
 					color: #1e2d7d;
 					&:hover {
 						color: #00badb;
