@@ -142,7 +142,10 @@ $row-height: 100px;
 			}
 		}
 		&__bottom {
-			height: 60px;
+			min-height: 60px;
+			position: sticky;
+			top:0;
+			display:block;
 			&-navbar {
 				display: block;
 			}
