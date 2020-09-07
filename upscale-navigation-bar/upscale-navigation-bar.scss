@@ -33,7 +33,7 @@ $space-between: 14px;
 		//max-width: 1180px;
 		max-width: none;
 		margin: 0 auto;
-		height:50px;
+		height:40px;
 		ul {
 			list-style-type: none;
 			//margin: 10px 0;
@@ -41,7 +41,7 @@ $space-between: 14px;
 			flex-wrap: wrap;
 			align-items: center;
 			overflow: hidden;
-			height:30px;
+			height:20px;
 			padding: 10px 20px;
 			li {
 				box-sizing: border-box;
@@ -63,7 +63,7 @@ $space-between: 14px;
 					text-overflow: ellipsis;
 					white-space: nowrap;
 					display: flex;
-					//text-transform: uppercase;
+					text-transform: uppercase;
 					letter-spacing: -0.2px;
 					background-color: transparent;
 					&:hover {

@@ -2,7 +2,6 @@
 
 /*
 $row-height: 100px;
-
 :host {
 	position: sticky;
 	top: 0;
@@ -12,7 +11,6 @@ $row-height: 100px;
 	background: #1e2d7d;
 	min-height: $row-height;
 	z-index: 4;
-
 	.header {
 		&__top {
 			display: flex;
@@ -68,7 +66,7 @@ $row-height: 100px;
 
 
 :host {
-	position: relative;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	display: block;
@@ -129,8 +127,8 @@ $row-height: 100px;
 			box-sizing: border-box;
 			flex-grow: 0;
 			flex-shrink: 1;
-			height:60px;
-			background: $white !important;
+			height:50px;
+			background: #fff !important;
 			padding: 0 20px;
 			&-navbar {
 				display: flex;
@@ -142,14 +140,13 @@ $row-height: 100px;
 			}
 		}
 		&__bottom {
-			height: 60px;
 			&-navbar {
 				display: block;
 			}
 		}
 		&__top-left {
 			display: flex;
-			height: 60px;
+			height: $row-height;
 			align-items: center;
 		}
 		&__hamburger {
@@ -167,22 +164,22 @@ $row-height: 100px;
 		}
 		&__logo-image {
 			&-wrapper {
-				max-height: 54px;
+				max-height: 50px;
 				height: 100%;
 				display: flex;
 				//display:none;
 				width:200px;
 				align-items: center;
 				h1 {
-					padding-left: 14px;
+					padding-left: 20px;
 				}
 			}
 			&.desktop {
-				max-height: 54px;
+				max-height: 40px;
 			}
-			max-height: 54px;
+			max-height: 40px;
 			@include clickable;
-			padding: 3px 0;
+			padding: 5px 0;
 		}
 	}
 }
