@@ -118,13 +118,13 @@ $row-height: 100px;
 				}
 				p {
 					display:inline-block;
-					font-size:12px;
+					font-size:13px;
 					font-weight: 400;
 					margin:0;
 					vertical-align: middle;
 				}
 				a {
-					font-size: 14px;
+					font-size: 15px;
 					font-weight: 400;
 					color: #1e2d7d;
 					&:hover {
@@ -132,7 +132,7 @@ $row-height: 100px;
 					}
 				}
 				p, a {
-					max-width: 130px;
+					max-width: 140px;
 					line-height: 38px;
 				}
 			}
