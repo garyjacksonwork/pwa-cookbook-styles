@@ -13,7 +13,7 @@
 
 	.title{
 		@include extra-large-font-size;
-
+		padding-bottom: 20px;
 		&-alignment {
 			&_left {
 				text-align: left;
