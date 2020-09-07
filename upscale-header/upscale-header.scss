@@ -65,7 +65,7 @@ $row-height: 100px;
 }*/
 
 
-:host { /*
+:host {
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -181,5 +181,5 @@ $row-height: 100px;
 			@include clickable;
 			padding: 5px 0;
 		}
-	}*/
+	}
 }
