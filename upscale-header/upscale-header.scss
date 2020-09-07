@@ -80,12 +80,14 @@ $row-height: 100px;
 		.row {
 			padding:6px 20px;
 			width: calc(100% - 40px);
+			height:38px;
 			.column {
 				display:inline-block;
 				width: calc(100% / 5 - 16px); 
 				margin-right:20px;
 				vertical-align: middle;
 				text-align:center;
+				height:38px;
 				&:nth-of-type(1) {
 					img {
 						position: relative;
@@ -105,12 +107,14 @@ $row-height: 100px;
 					width:26px;
 					margin-right: 10px;
 					display:inline-block;
+					line-height: 38px;
+					vertical-align: middle;
 				}
 				p {
 					display:inline-block;
 					font-size:12px;
 					font-weight: 400;
-					line-height: 33px;
+					line-height: 38px;
 					margin:0;
 					vertical-align: middle;
 				}
