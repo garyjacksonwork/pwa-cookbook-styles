@@ -35,24 +35,30 @@
 				&.social {
 					width:30px;
 					height:30px;
+					&.last {
+						margin-right: 40px;
+					}
 				}
 				&.payment {
 					height:20px;
 					width:30px;
 					margin-bottom: 5px;
+					&.first {
+						margin-left: 40px;
+					}
 				}
-				position: relative;
 				margin:0 20px;
 			}
 			span {
+				position: relative;
 				&:before {
 					content: "";
 					position: absolute;
-					top: 0;
-					left: -10px;
-					width:1px;
+					top: -15px;
+					left: 0;
+					width:2px;
 					height:30px;
-					background-color: #f5f5f5;
+					background-color: #dddddd;
 				}
 			}
 		}
