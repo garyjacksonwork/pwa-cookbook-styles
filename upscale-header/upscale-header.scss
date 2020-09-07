@@ -82,7 +82,7 @@ $row-height: 100px;
 			width:100%;
 			.column {
 				display:inline-block;
-				width: calc(100% / 4 - 20px); 
+				width: calc(100% / 5 - 20px); 
 				margin-right:20px;
 				vertical-align: initial;
 				&:nth-of-type(4) {
@@ -110,6 +110,13 @@ $row-height: 100px;
 					line-height: 1;
 					margin:0;
 					vertical-align: middle;
+				}
+				a {
+					text-transform: uppercase;
+					color: #1e2d7d;
+					&:hover {
+						color: #00badb;
+					}
 				}
 			}
 		}
