@@ -132,8 +132,9 @@ $row-height: 100px;
 			&-navbar {
 				display: flex;
 				align-items: center;
-				width: calc(100% - 250px);
-				margin: 0 auto;
+				width: calc(100% - 200px);
+				margin: 0;
+				float:left;
 			}
 		}
 		&__bottom {
