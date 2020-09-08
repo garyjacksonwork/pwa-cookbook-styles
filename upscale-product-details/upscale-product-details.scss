@@ -418,13 +418,30 @@ $fixed-button-bar-height: 100px;
 .price {
 	padding-bottom: 18px;
 	.original-price {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
 		text-decoration: line-through;
+		margin-top:0;
+		padding-top: 2px;
+	}
+	.selling-price,
+	.regular-price,
+	.original-price {
 		display:inline-block;
-		padding-right: 10px;
-		font-weight: 300;
 	}
 	.selling-price {
-		display:inline-block;
+		padding-right: 14px;
+	}
+	.regular-price {
+		color: #00badb;
+	}
+	.selling-price,
+	.regular-price {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 20px;
+		white-space: nowrap;
 	}
 }
 
