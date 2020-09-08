@@ -12,7 +12,7 @@
 
 
 	.title{
-		font-size: 34px;
+		@include large-font-size;
 		padding-bottom: 20px;
 		&-alignment {
 			&_left {
@@ -31,7 +31,7 @@
 
 	.sub-title{
 		//@include base-font-size;
-		font-size: 24px;
+		font-size: 28px;
 		font-weight: 400;
 		letter-spacing: 0.2px;
 
