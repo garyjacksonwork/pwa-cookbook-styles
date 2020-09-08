@@ -178,12 +178,13 @@
 		.original-price {
 			font-size: 14px;
 			font-weight: 400;
-			line-height: 16px;
+			line-height: 20px;
 			text-decoration: line-through;
-			margin-top: 2px;
+			margin-top:0;
+			padding-top: 2px;
 		}
 		.selling-price {
-			padding-right: 8px;
+			padding-right: 14px;
 		}
 		.regular-price {
 			color: #00badb;
@@ -191,7 +192,7 @@
 		.selling-price,
 		.regular-price {
 			font-weight: 700;
-			font-size: 18px;
+			font-size: 20px;
 			letter-spacing: .8px;
 			line-height: 20px;
 			white-space: nowrap;
