@@ -176,19 +176,25 @@
         padding: 0 12px;
         width: calc(100% - 24px);
 		.original-price {
-			font-size: 12px;
+			font-size: 14px;
 			font-weight: 400;
 			line-height: 16px;
 			text-decoration: line-through;
+			margin-top: 2px;
 		}
 		.selling-price {
+			padding-right: 8px;
+		}
+		.regular-price {
+			color: #00badb;
+		}
+		.selling-price,
+		.regular-price {
 			font-weight: 700;
-			font-size: 14px;
+			font-size: 18px;
 			letter-spacing: .8px;
 			line-height: 20px;
 			white-space: nowrap;
-			padding-left: 8px;
-			margin-top: -2px;
 		}
 	}
 
