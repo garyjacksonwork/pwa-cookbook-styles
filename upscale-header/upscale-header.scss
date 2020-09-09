@@ -68,13 +68,16 @@
 			.row {
 				.column {
 					&:nth-of-type(2) {
-						margin-right: 20px;
+						margin-right: 0;
 					}
 					&:nth-of-type(3),
 					&:nth-of-type(4) {
 						display:none;
 					}
 					width: calc(50% - 10px);
+					p {
+						max-width: 160px;
+					}
 				}
 			}
 		}
@@ -85,7 +88,11 @@
 						display:none;
 					}
 					width: 100%;
-					margin-right: 0;
+					margin-right: 0 !important;
+					p {
+						max-width: 300px;
+						line-height: 38px;
+					}
 				}
 			}
 		}

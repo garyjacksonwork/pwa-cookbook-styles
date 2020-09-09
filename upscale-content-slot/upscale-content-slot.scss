@@ -102,6 +102,16 @@
 				margin:0;
 			}
 		}
+		@media screen and (max-width: 950px) {
+			.social {
+
+			}
+			.footer-main {
+				.colum {
+
+				}
+			}
+		}
 	}
 
 
@@ -137,6 +147,7 @@
 .container {
 	display: block;
 	margin: auto;
+	width: calc(100% - 40px);
 }
 
 .headline {
