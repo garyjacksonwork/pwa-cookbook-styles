@@ -46,7 +46,7 @@
 					&.payment {
 						height:20px;
 						width:30px;
-						margin-bottom: 5px;
+						margin-top: 5px;
 						&.first {
 							margin-left: 40px;
 						}
@@ -62,10 +62,11 @@
 				}
 				span {
 					position: relative;
+					float:left;
 					&:before {
 						content: "";
 						position: absolute;
-						top: -15px;
+						top: 0;
 						left: 0;
 						width:1px;
 						height:30px;
@@ -119,9 +120,22 @@
 				.social-media,
 				.payment-providers {
 					width:100%;
+					text-align: center;
 				}
 				.social-media {
 					margin-bottom: 20px;
+					img {
+						&.social {
+							&.last {
+								margin-right: 20px;
+							}
+						}
+						&.payment {
+							&.first {
+								margin-left: 20px;
+							}
+						}
+					}
 				}
 				span {
 					display:none;
