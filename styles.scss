@@ -87,7 +87,7 @@ button {
 .upscale-desktop {
 	.container-content {
 		max-width: 1180px;
-		width: 100%;
+		width: calc(100% - 40px);
         margin: 0 auto;
         padding: 0 20px;
 	}
@@ -136,14 +136,14 @@ button {
 
 .upscale-mobile, .upscale-tablet {
 	.container-content {
-		width: 100%;
+		width: calc(100% - 40px);
         margin: 0 auto;
         padding: 0 20px;
 	}
 
 	[data-component-type="BROWSE"] {
 		.container-content {
-			width: 100%;
+			width: calc(100% - 40px);
 		}
 	}
 }
@@ -151,7 +151,7 @@ button {
 .upscale-mobile, .upscale-tablet {
 	[data-component-type="ORDER_DETAILS"] {
 		.container-content {
-			width: 100%;
+			width: calc(100% - 40px);
 			max-width: 600px;
 		}
 	}
