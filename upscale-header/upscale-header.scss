@@ -118,6 +118,9 @@
 				width: calc(100% - 200px);
 				margin: 0;
 				float:left;
+				@media screen and (max-width: 500px) {
+					width: calc(100% - 100px);
+				}
 			}
 		}
 		&__bottom {
@@ -161,6 +164,11 @@
 			max-height: 50px;
 			@include clickable;
 			padding: 5px 0;
+			@media screen and (max-width: 500px) {
+				&-wrapper {
+					width: 100px;
+				}
+			}
 		}
 	}
 }

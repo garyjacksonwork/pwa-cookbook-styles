@@ -191,6 +191,11 @@
 				@include small-font-size;
 				margin-left: 2.5%;
 			}
+			.category-details {
+				h1 {
+					text-align: center;
+				}
+			}
 		}
 	}
 }
