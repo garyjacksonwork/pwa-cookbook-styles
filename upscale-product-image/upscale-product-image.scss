@@ -4,9 +4,15 @@
     cursor: -webkit-zoom-in;
     overflow: hidden;
     &:hover {
-        .img {
-            transition: 0.3s;
-            transform: scale(1.5);
+        ::ng-deep upscale-generic-image {
+            .img {
+                transition: 0.3s;
+                transform: scale(1.5);
+            }
+            .img {
+                transition: 0.3s;
+                transform: scale(1.5); 
+            }
         }
     }
 }
