@@ -33,7 +33,8 @@
 			position: relative;
 			.social-media,
 			.payment-providers {
-				width: 50%;
+				width: calc(50% - 0.5px);
+				float:left;
 				img {
 					&.social {
 						width:30px;
@@ -52,6 +53,12 @@
 					}
 					margin:0 20px;
 					}
+				}
+				.social-media {
+					text-align: right;
+				}
+				.payment-providers {
+					text-align: left;
 				}
 				span {
 					position: relative;
