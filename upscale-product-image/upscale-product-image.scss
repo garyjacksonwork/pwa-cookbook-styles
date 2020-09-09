@@ -3,14 +3,14 @@
 	cursor: zoom-in;
     cursor: -webkit-zoom-in;
     overflow: hidden;
-    &:hover {
-        ::ng-deep upscale-generic-image {
-            .img {
-                transition: 0.3s;
-                transform: scale(1.5);
-            }
-            .img {
-                transition: 0.3s;
+    ::ng-deep upscale-generic-image {
+        .img {
+            transition: 0.3s;
+            transform: scale(1.5);
+        }
+        .img {
+            &:active {
+                transition: transform 0.3s;
                 transform: scale(1.5); 
             }
         }
