@@ -13,7 +13,7 @@
 		@include small-font-size;
 		background-color: inherit;
         margin-top: 12px;
-        color: #333333;
+        color: #333333 !important;
 	}
 	&__icon {
 		padding: 0 6px;
@@ -24,9 +24,6 @@
 }
 
 
-.color-white {
-	color: white;
-}
 
 .hamburger-width {
 	width: none;

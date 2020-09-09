@@ -4,7 +4,10 @@
     cursor: -webkit-zoom-in;
     overflow: hidden;
     &:hover {
-        transform: scale(1.5);
+        .img {
+            transition: 0.3s;
+            transform: scale(1.5);
+        }
     }
 }
 
