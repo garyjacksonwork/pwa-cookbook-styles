@@ -83,7 +83,7 @@ $row-height: 100px;
 			height:38px;
 			.column {
 				display:inline-block;
-				width: calc(100% / 5 - 16px); 
+				width: calc(100% / 4 - 20px); 
 				margin-right:20px;
 				vertical-align: middle;
 				text-align:center;
@@ -105,7 +105,7 @@ $row-height: 100px;
 						top: 5px;
 					}
 				}
-				&:nth-of-type(5) {
+				&:nth-of-type(4) {
 					margin-right: 0;
 				}
 				img {
@@ -122,16 +122,6 @@ $row-height: 100px;
 					font-weight: 400;
 					margin:0;
 					vertical-align: middle;
-				}
-				a {
-					font-size: 15px;
-					font-weight: 400;
-					color: #1e2d7d;
-					&:hover {
-						color: #00badb;
-					}
-				}
-				p, a {
 					max-width: 140px;
 					line-height: 38px;
 				}
