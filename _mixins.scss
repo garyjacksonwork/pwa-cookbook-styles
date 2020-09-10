@@ -9,15 +9,19 @@
 	$border-radius: 4px
 ) {
 	@include clickable();
-	@include hover($background-color, $hover-mix-color);
+	//@include hover($background-color, $hover-mix-color);
 	background-color: $background-color;
-	border: 0;
+	border: 1px solid $background-color;
 	border-radius: $border-radius;
 	color: $color;
 	font-weight: $font-weight;
 	font-size: $base-font-size;
 	font-family: $base-font-family;
 	padding: 0;
+	&:hover {
+		color:$background-color;
+		background-color: $color;
+	}
 	&:disabled {
 		cursor: default;
 	}
