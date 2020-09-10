@@ -29,6 +29,9 @@
 			margin-top: 1.33em;
 			margin-bottom: 1.33em;
 		}
+		.about-us {
+			text-align: left;
+		}
 		.social {
 			position: relative;
 			.social-media,
@@ -130,6 +133,10 @@
 								margin-right: 20px;
 							}
 						}
+					}
+				}
+				.payment-providers {
+					img {
 						&.payment {
 							&.first {
 								margin-left: 20px;
