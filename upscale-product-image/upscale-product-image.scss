@@ -1,23 +1,6 @@
 :host {
 	position: relative;
-	cursor: default;
-	/*cursor: zoom-in;
-    cursor: -webkit-zoom-in;
-    overflow: hidden;
-    &:hover {
-        ::ng-deep upscale-generic-image {
-            .img {
-                transition: 0.3s;
-                transform: scale(1.4);
-            }
-            .img {
-                &:active {
-                    transition: 0.3s;
-                    transform: scale(1.4); 
-                }
-            }
-        }
-    }*/
+	cursor: pointer;
 }
 
 .product-card-icon-holder {
