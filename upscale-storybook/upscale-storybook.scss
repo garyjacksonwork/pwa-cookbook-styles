@@ -34,6 +34,31 @@
 		font-size: 28px;
 		font-weight: 400;
 		letter-spacing: 0.2px;
+		overflow: hidden;
+		position: relative;
+		line-height: 1;
+		span {
+			display:inline-block;
+			vertical-align: baseline;
+			position: relative;
+			padding:20px 0;
+			&:before,
+			&:after {
+				content: '';
+				display: block;
+				width: 1000px;
+				position: absolute;
+				top: .5em;
+				border-top: 1px solid #dddddd;
+				box-sizing: border-box;
+			}
+			&:before {
+				right: 100%;
+			}
+			&:after {
+				left: 100%;
+			}
+		}
 
 		&-alignment {
 			&_left {
