@@ -41,23 +41,6 @@
 			display:inline-block;
 			vertical-align: baseline;
 			position: relative;
-			padding:0 30px;
-			&:before,
-			&:after {
-				content: '';
-				display: block;
-				width: 1000px;
-				position: absolute;
-				top: .5em;
-				border-top: 1px solid #dddddd;
-				box-sizing: border-box;
-			}
-			&:before {
-				right: 100%;
-			}
-			&:after {
-				left: 100%;
-			}
 		}
 
 		&-alignment {
@@ -67,6 +50,25 @@
 
 			&_center {
 				text-align: center;
+				span {
+					padding:0 30px;
+					&:before,
+					&:after {
+						content: '';
+						display: block;
+						width: 1000px;
+						position: absolute;
+						top: .5em;
+						border-top: 1px solid #dddddd;
+						box-sizing: border-box;
+					}
+					&:before {
+						right: 100%;
+					}
+					&:after {
+						left: 100%;
+					}
+				}
 			}
 
 			&_right {
