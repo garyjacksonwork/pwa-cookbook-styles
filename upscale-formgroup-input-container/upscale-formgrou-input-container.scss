@@ -1,0 +1,137 @@
+@import "~styles/helpers/_module";
+
+:host {
+	display: block;
+
+	.formgroup {
+		&__container {
+			border-radius: 3px;
+			overflow: hidden;
+
+			&-arrow {
+				display: flex;
+				margin-top: 1px;
+				justify-content: center;
+				background-color: white;
+				flex: 1 1 44px;
+				padding-top: 16px;
+
+				&::after {
+					content: '';
+					height: 7px;
+					width: 7px;
+					border-right: 2px solid $upscale-grey2;
+					border-bottom: 2px solid $upscale-grey2;
+					transform: rotate(45deg);
+				}
+			}
+
+			&-header-arrow {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 30px;
+				padding-top: 4px;
+				padding-bottom: 0;
+				background-color: white;
+
+				&::after {
+					content: '';
+					height: 7px;
+					width: 7px;
+					border-right: 2px solid #bbbbbb;
+					border-bottom: 2px solid #bbbbbb;
+					transform: rotate(-135deg);
+				}
+
+				&.flipped {
+					padding-top: 0;
+					padding-bottom: 4px;
+				}
+
+				&.flipped::after {
+					transform: rotate(45deg);
+				}
+			}
+
+			&-row {
+				height: 45px;
+				padding: 0 11px;
+				background-color: white;
+			}
+
+			&-header {
+				flex-grow: 1;
+				@include medium-font-size;
+				box-sizing: border-box;
+				align-items: center;
+				color: black;
+			}
+
+			&-header, &-row {
+				display: flex;
+			}
+
+			&-content {
+				overflow: hidden;
+				display: flex;
+				form {
+					width: 100%;
+				}
+			}
+		}
+
+		&__actions {
+			display: flex;
+			height: 50px;
+			width: 100%;
+			margin-top: 10px;
+		}
+		&__actions:empty {
+			display: none;
+		}
+
+		&__cancel {
+			@include clickable;
+			text-decoration: underline;
+			color: $upscale-grey2;
+			min-width: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__button {
+            @include button;
+            background-color: #1e2d7d !important;
+			width: 100%;
+
+			&:disabled {
+				background-color: #dadada;
+				color: $upscale-grey4;
+			}
+		}
+
+		&__messages {
+			box-sizing: border-box;
+			margin: 10px 0;
+			padding: 6px;
+			width: 100%;
+			border-radius: 2px;
+			color: $upscale-grey4;
+			background-color: white;
+			font-size: $small-font-size;
+			justify-content: center;
+			align-items: center;
+
+			&.error {
+				color: white;
+				background-color: #dc493a;
+			}
+		}
+
+		&__message {
+			margin: 6px 0;
+		}
+	}
+}
