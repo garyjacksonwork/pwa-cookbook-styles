@@ -1,7 +1,6 @@
 @import "~styles/helpers/_module";
 
 :host {
-	display: block;
 	border-top: 1px solid #eee;
 	margin-top: 30px;
 
@@ -195,11 +194,6 @@
 
 
 
-.upscale-mobile :host {
-	.configuration {
-		padding: 12px 0;
-	}
-}
 
 .upscale-tablet :host {
 	.configuration {
@@ -214,27 +208,7 @@
 }
 
 
-.configuration {
-	box-sizing: border-box;
-	margin: 0 auto;
-	//background-color: #E1FA3D !important;
-}
 
 .container {
-	display: block;
-	margin: 0;
 	width: 100%;
-}
-
-.headline {
-	@include extra-large-font-size;
-}
-
-.sub-headline {
-	font-size: 26px;
-	line-height: 1.38;
-}
-
-.text {
-	text-align: center;
 }

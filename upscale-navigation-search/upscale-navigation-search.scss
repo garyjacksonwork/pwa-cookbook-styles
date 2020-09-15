@@ -1,35 +1,12 @@
 @import '~styles/helpers/_module';
 
 .search-bar {
-	display: flex;
-	flex-direction: row;
-	max-width: 700px;
 	height: 60px;
 	&__input {
-		width: 100%;
-		border: none;
-		outline: 0;
-		@include small-font-size;
+		height: 30px;
 		padding:8px;
 		background-color: #f5f5f5;
         margin: 10px 0;
         color: #333333 !important;
 	}
-	&__icon {
-		padding: 0 6px;
-		width: auto;
-		height: 20px;
-		align-self: center;
-	}
 }
-
-
-
-.hamburger-width {
-	width: none;
-}
-
-.navbar-width {
-	width: 60vw;
-}
-
