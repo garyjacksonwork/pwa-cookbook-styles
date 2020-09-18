@@ -2,31 +2,40 @@
 
 :host{
 
-
-	.sub-title {
-		font-size: 30px;
-		overflow: hidden;
-		&-alignment {
-			&_center {
-				line-height: 32px;
-				span {
-					padding:0 30px;
-					position: relative;
-					&:before,
-					&:after {
-						content: '';
-						display: block;
-						width: 1000px;
-						position: absolute;
-						top: calc(.5em + 2px);
-						border-top: 1px solid #dddddd;
-						box-sizing: border-box;
-					}
-					&:before {
-						right: 100%;
-					}
-					&:after {
-						left: 100%;
+	.container-content {
+		overflow: visible;
+		.sub-title {
+			font-size: 30px;
+			overflow: hidden;
+			line-height: 34px;
+			&-alignment {
+				&_center {
+					line-height: 32px;
+					span {
+						padding:0 30px;
+						position: relative;
+						&:before,
+						&:after {
+							content: '';
+							display: block;
+							width: 1000px;
+							position: absolute;
+							top: calc(.5em + 2px);
+							border-top: 1px solid #dddddd;
+							box-sizing: border-box;
+						}
+						&:before {
+							right: 100%;
+						}
+						&:after {
+							left: 100%;
+						}
+						@media screen and (max-width: 1000px) {
+							&:before, 
+							&:after {
+								display:none;
+							}
+						}
 					}
 				}
 			}

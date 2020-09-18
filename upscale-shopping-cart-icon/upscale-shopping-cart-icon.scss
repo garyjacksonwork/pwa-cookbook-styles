@@ -1,0 +1,18 @@
+@import '~styles/helpers/_module';
+
+:host {
+    .shopping-cart-icon__badge {
+        padding: 2px;
+        top: 0;
+        right: -11px;
+    }
+    &:hover {
+        .shopping-cart-icon__badge {
+            top:-3px;
+            right:-14px;
+            padding:5px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+    }
+}

@@ -1,8 +1,9 @@
 @import '~styles/helpers/_module';
 
 :host {
-    cursor: pointer;
-    
+	cursor: pointer;
+	position: relative;
+    padding-bottom: 18px;
 
 	.colors,
 	.name,
@@ -43,6 +44,17 @@
 
 	.price {
 		margin-bottom: 6px;
+	}
+	.save-banner {
+		position: absolute;
+		top: 14px;
+		left:0;
+		background-color: rgb(208, 19, 69);
+		color: #fff;
+		padding: 5px 10px;
+		line-height: 1;
+		font-size: 14px;
+		margin:0;
 	}
 
 }

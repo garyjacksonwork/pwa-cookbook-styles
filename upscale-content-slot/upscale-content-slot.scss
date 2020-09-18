@@ -117,7 +117,13 @@
 			p {
 				text-align: left;
 				font-size: 12px;
+				line-height: 46px;
 				margin:0;
+				float:left;
+			}
+			img {
+				float: right;
+				max-height: 46px;
 			}
 		}
 		@media screen and (max-width: 900px) {
@@ -161,6 +167,19 @@
 						margin-right: 0;
 					}
 					width: calc(50% - 20px);
+				}
+			}
+		}
+		@media screen and (max-width: 550px) {
+			.footer-bottom {
+				p {
+					float: none;
+					width: 100%;
+				}
+				img {
+					margin: 0 auto;
+					display:block;
+					float:none;
 				}
 			}
 		}
