@@ -3,7 +3,9 @@
 :host {
 	cursor: pointer;
 	position: relative;
-    padding-bottom: 18px;
+	padding-bottom: 18px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
 
 	.colors,
 	.name,
@@ -34,8 +36,8 @@
 
 	.name {
 		line-height: 1.2 !important;
-		font-size: 14px !important;
-		min-height:34px !important;
+		font-size: 16px !important;
+		min-height:40px !important;
 		overflow: hidden;
 		font-weight: 300;
 		margin: 16px 0 6px 0;
@@ -48,13 +50,21 @@
 	.save-banner {
 		position: absolute;
 		top: 14px;
-		left:0;
+		left:-1px;
 		background-color: rgb(208, 19, 69);
 		color: #fff;
 		padding: 5px 10px;
 		line-height: 1;
 		font-size: 14px;
 		margin:0;
+		transition: 0.4s;
+		-webkit-transition: 0.4s;
+	}
+
+	&:hover {
+		.save-banner {
+			padding-left: 30px;
+		}
 	}
 
 }
